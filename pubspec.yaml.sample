@@ -1,0 +1,86 @@
+name: allship_record
+description: Video recording tool for e-commerce order packing evidence.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_bloc: ^8.1.3
+  equatable: ^2.0.5
+
+  # Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # Camera & Video
+  camera: ^0.10.5+5
+  video_player: ^2.8.1
+
+  # Barcode Scanning
+  google_mlkit_barcode_scanning: ^0.10.0
+
+  # File System
+  path_provider: ^2.1.1
+
+  # Utilities
+  intl: ^0.18.1
+  uuid: ^4.2.1
+
+  # Audio Feedback
+  audioplayers: ^5.2.1
+
+  # Permissions
+  permission_handler: ^11.1.0
+
+  # Location (for video overlay)
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+
+  # UI Component Libraries
+  flutter_platform_widgets: ^6.1.0  # Auto Material/Cupertino
+  getwidget: ^4.0.0                 # 1000+ pre-built widgets
+  styled_widget: ^0.4.1             # CSS-like styling
+  nb_utils: ^6.1.5                  # Utilities & helpers
+  iconsax_flutter: ^1.0.0           # Modern icon library (1500+ icons)
+
+  # QR Code
+  qr_flutter: ^4.1.0
+
+  # Voice Commands (optional)
+  speech_to_text: ^6.3.0
+
+  # Firebase (optional - Phase 4)
+  # firebase_core: ^2.24.0
+  # firebase_crashlytics: ^3.4.0
+  # firebase_remote_config: ^4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  mockito: ^5.4.4
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+    - family: RobotoMono
+      fonts:
+        - asset: assets/fonts/RobotoMono-Regular.ttf
