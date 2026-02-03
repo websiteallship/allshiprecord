@@ -237,6 +237,22 @@ rm -rf .agent/skills/.git
 ls .agent/skills
 ```
 
+### Cách 2: Sử dụng Script tự động
+
+```bash
+# Cài đặt tất cả skills
+python .agent/install_skills.py
+
+# Liệt kê skills sẽ cài
+python .agent/install_skills.py --list
+
+# Cập nhật skills đã có
+python .agent/install_skills.py --update
+
+# Xóa và cài lại
+python .agent/install_skills.py --clean
+```
+
 ### Danh sách Skills đã cài đặt
 
 Xem chi tiết tại: [`.agent/PROJECT_SKILLS.md`](.agent/PROJECT_SKILLS.md)
