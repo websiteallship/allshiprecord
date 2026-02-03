@@ -207,6 +207,62 @@ Xem chi tiết: `.agent/rules/00_ai-context-requirements.md`
 
 ---
 
+## 🧠 AI Skills Installation
+
+Dự án sử dụng **AI Skills** từ [antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills) để mở rộng khả năng của AI agents.
+
+### Cài đặt Skills
+
+**Bước 1:** Clone skills repository vào thư mục `.agent/skills/`
+
+```bash
+# Từ thư mục gốc của dự án
+git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+```
+
+**Bước 2:** Xóa thư mục `.git` của skills (để tránh embedded repo)
+
+```bash
+# Windows
+Remove-Item -Recurse -Force .agent/skills/.git
+
+# macOS/Linux
+rm -rf .agent/skills/.git
+```
+
+**Bước 3:** Verify cài đặt
+
+```bash
+# Kiểm tra số lượng skills
+ls .agent/skills
+```
+
+### Danh sách Skills đã cài đặt
+
+Xem chi tiết tại: [`.agent/PROJECT_SKILLS.md`](.agent/PROJECT_SKILLS.md)
+
+| Nhóm | Skills | Mô tả |
+|---|---|---|
+| 🏗️ Architecture | 3 skills | Software architecture, database design |
+| 📱 Mobile | 2 skills | Flutter expert, mobile design |
+| 🎬 Video | 1 skill | Video encoding (H.264, fMP4) |
+| 🔌 Hardware | 3 skills | Barcode scanning, Bluetooth HID, RTSP |
+| 🧪 Testing | 5 skills | Error handling, testing, debugging |
+| 🎨 UI/UX | 1 skill | 50+ styles, 97 color palettes |
+| 📝 Planning | 4 skills | Documentation, brainstorming |
+
+**Tổng: 23 skills**
+
+### Sử dụng Skills
+
+AI agents sẽ tự động nhận diện và sử dụng skills khi:
+- Phát triển tính năng mới
+- Debug vấn đề
+- Thiết kế kiến trúc
+- Viết documentation
+
+---
+
 ## 👥 Team
 
 - **Project Owner**: Allship Team
